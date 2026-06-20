@@ -16,14 +16,15 @@ export default function Hero() {
             alt="Me"
           />
           <h1 className="h1 font-aspekta mb-5">
-            I write about coding and being a{" "}
-            <Highlight>full-time</Highlight>{" "}
-            maker.
+            I write about <Highlight>coding</Highlight>, software{" "}
+            <Highlight>management</Highlight> and{" "}
+            <Highlight>politics</Highlight>.
           </h1>
           <p className="text-lg text-slate-500 dark:text-slate-400">
-            Writer, Speaker, Developer, and Co-Founder of Code.co, and
-            AppForYou. I write about coding, startups, and my journey as a
-            full-time maker.
+            Started with firmware development. Worked on the most prominent
+            collaboration software suite in the world. Later, helped
+            organisations migrate off legacy SQL estates. Now, back in a
+            hands-on role, I am working on displacing an industry giant.
           </p>
         </div>
       </div>

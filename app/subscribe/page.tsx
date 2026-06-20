@@ -10,8 +10,7 @@ import Testimonial01 from '@/public/images/testimonial-01.jpg'
 import Testimonial02 from '@/public/images/testimonial-02.jpg'
 
 export const metadata = {
-  title: 'About - DevSpace',
-  description: 'Page description',
+  title: 'Subscribe',
 }
 
 export default function Subscribe() {

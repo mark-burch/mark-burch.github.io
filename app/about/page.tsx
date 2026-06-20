@@ -6,8 +6,7 @@ import AboutImg from '@/public/images/about.png'
 import Experience from '@/components/experience'
 
 export const metadata = {
-  title: 'About - DevSpace',
-  description: 'Page description',
+  title: 'About',
 }
 
 export default function About() {

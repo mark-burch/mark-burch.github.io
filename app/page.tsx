@@ -7,11 +7,6 @@ import WidgetNewsletter from '@/components/widget-newsletter'
 import WidgetSponsor from '@/components/widget-sponsor'
 import WidgetBook from '@/components/widget-book'
 
-export const metadata = {
-  title: 'Home - DevSpace',
-  description: 'Page description',
-}
-
 export default async function Home() {
   const allBlogs = getBlogPosts();
 

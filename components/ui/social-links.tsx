@@ -9,45 +9,32 @@ export default function SocialLinks({ className = "" }: SocialLinksProps) {
     <ul className={`inline-flex space-x-2 ${className}`}>
       <li>
         <a
-          className="flex justify-center items-center text-sky-500 hover:text-sky-600 transition duration-150 ease-in-out"
-          href="#0"
-          aria-label="Twitter"
-        >
-          <svg className="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-            <path d="m13.063 9 3.495 4.475L20.601 9h2.454l-5.359 5.931L24 23h-4.938l-3.866-4.893L10.771 23H8.316l5.735-6.342L8 9h5.063Zm-.74 1.347h-1.457l8.875 11.232h1.36l-8.778-11.232Z" />
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a
-          className="flex justify-center items-center text-sky-500 hover:text-sky-600 transition duration-150 ease-in-out"
-          href="#0"
-          aria-label="YouTube"
-        >
-          <svg className="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-            <path d="M23.8 12.8c-.2-1.3-.8-2.2-2.2-2.4C19.4 10 16 10 16 10s-3.4 0-5.6.4c-1.4.2-2.1 1.1-2.2 2.4C8 14.1 8 16 8 16s0 1.9.2 3.2c.2 1.3.8 2.2 2.2 2.4 2.2.4 5.6.4 5.6.4s3.4 0 5.6-.4c1.4-.3 2-1.1 2.2-2.4.2-1.3.2-3.2.2-3.2s0-1.9-.2-3.2ZM14 19v-6l5 3-5 3Z" />
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a
-          className="flex justify-center items-center text-sky-500 hover:text-sky-600 transition duration-150 ease-in-out"
+          className="flex justify-center items-center text-slate-800 hover:text-sky-500 dark:text-slate-200 dark:hover:text-sky-500 transition duration-150 ease-in-out"
           href="https://github.com/mark-burch"
           aria-label="GitHub"
         >
-          <svg className="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            className="w-8 h-8 fill-current"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <path d="M16 8.2c-4.4 0-8 3.6-8 8 0 3.5 2.3 6.5 5.5 7.6.4.1.5-.2.5-.4V22c-2.2.5-2.7-1-2.7-1-.4-.9-.9-1.2-.9-1.2-.7-.5.1-.5.1-.5.8.1 1.2.8 1.2.8.7 1.3 1.9.9 2.3.7.1-.5.3-.9.5-1.1-1.8-.2-3.6-.9-3.6-4 0-.9.3-1.6.8-2.1-.1-.2-.4-1 .1-2.1 0 0 .7-.2 2.2.8.6-.2 1.3-.3 2-.3s1.4.1 2 .3c1.5-1 2.2-.8 2.2-.8.4 1.1.2 1.9.1 2.1.5.6.8 1.3.8 2.1 0 3.1-1.9 3.7-3.7 3.9.3.4.6.9.6 1.6v2.2c0 .2.1.5.6.4 3.2-1.1 5.5-4.1 5.5-7.6-.1-4.4-3.7-8-8.1-8z" />
           </svg>
         </a>
       </li>
       <li>
         <a
-          className="flex justify-center items-center text-sky-500 hover:text-sky-600 transition duration-150 ease-in-out"
+          className="flex justify-center items-center text-slate-800 hover:text-sky-500 dark:text-slate-200 dark:hover:text-sky-500 transition duration-150 ease-in-out"
           href="#0"
-          aria-label="Telegram"
+          aria-label="LinkedIn"
         >
-          <svg className="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-            <path d="M22.968 10.276a.338.338 0 0 0-.232-.253 1.192 1.192 0 0 0-.63.045s-14.019 5.038-14.82 5.596c-.172.121-.23.19-.259.272-.138.4.293.573.293.573l3.613 1.177a.388.388 0 0 0 .183-.011c.822-.519 8.27-5.222 8.7-5.38.068-.02.118 0 .1.049-.172.6-6.606 6.319-6.64 6.354a.138.138 0 0 0-.05.118l-.337 3.528s-.142 1.1.956 0a30.66 30.66 0 0 1 1.9-1.738c1.242.858 2.58 1.806 3.156 2.3a1 1 0 0 0 .732.283.825.825 0 0 0 .7-.622s2.561-10.275 2.646-11.658c.008-.135.021-.217.021-.317a1.177 1.177 0 0 0-.032-.316Z" />
+          {/* Bootstrap Icons LinkedIn (native 16×16); viewBox padded to -8 -8 32 32 so the glyph fills ~50% of the box, matching the other icons */}
+          <svg
+            className="w-8 h-8 fill-current"
+            viewBox="-8 -8 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
           </svg>
         </a>
       </li>

@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Book from "@/public/images/book.png";
 
-export default function WidgetBook() {
+export default function WidgetPodcast() {
   return (
     <div className="rounded-lg border border-slate-200 dark:border-slate-800 dark:bg-linear-to-t dark:from-slate-800 dark:to-slate-800/30 odd:rotate-1 even:-rotate-1 p-5">
       <div className="font-aspekta font-[650] text-center mb-3">
-        Recommended Book
+        Recommended Podcast
       </div>
       <div className="text-center">
         <Image

@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import WidgetSponsor from '@/components/widget-sponsor'
 import WidgetBook from '@/components/widget-book'
 import Avatar01 from '@/public/images/avatar-01.jpg'
 import Avatar02 from '@/public/images/avatar-02.jpg'
@@ -177,7 +176,6 @@ export default function Subscribe() {
       <aside className="md:w-[240px] lg:w-[300px] shrink-0">
         <div className="space-y-6">
 
-          <WidgetSponsor />
           <WidgetBook />
 
         </div>

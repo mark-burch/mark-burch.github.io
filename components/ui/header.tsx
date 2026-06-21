@@ -1,5 +1,5 @@
-import Link from 'next/link'
 import ThemeToggle from './theme-toggle'
+import SocialLinks from './social-links'
 
 export default function Header() {
   return (
@@ -31,12 +31,8 @@ export default function Header() {
           {/* Light switch */}
           <ThemeToggle />
 
-          {/* Button */}
-          <div>
-            <Link className="btn-sm text-slate-100 bg-sky-500 hover:bg-sky-600" href="/subscribe">
-              Subscribe
-            </Link>
-          </div>
+          {/* Social links */}
+          <SocialLinks />
         </div>
       </div>
     </header>

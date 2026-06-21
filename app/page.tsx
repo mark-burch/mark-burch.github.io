@@ -4,7 +4,6 @@ import PostItem from './post-item'
 import Talks from '@/components/talks'
 import FeaturedProjects from '@/components/featured-projects'
 import WidgetNewsletter from '@/components/widget-newsletter'
-import WidgetSponsor from '@/components/widget-sponsor'
 import WidgetBook from '@/components/widget-book'
 
 export default async function Home() {
@@ -73,7 +72,6 @@ export default async function Home() {
           <div className="space-y-6">
 
             <WidgetNewsletter />
-            <WidgetSponsor />
             <WidgetBook />
 
           </div>

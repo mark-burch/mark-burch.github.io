@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Highlight from '@/components/highlight'
 import WidgetNewsletter from '@/components/widget-newsletter'
-import WidgetSponsor from '@/components/widget-sponsor'
 import AboutImg from '@/public/images/about.png'
 import Experience from '@/components/experience'
 
@@ -64,7 +63,6 @@ export default function About() {
         <div className="space-y-6">
 
           <WidgetNewsletter />
-          <WidgetSponsor />
 
         </div>
       </aside>

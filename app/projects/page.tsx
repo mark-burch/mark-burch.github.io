@@ -1,6 +1,5 @@
 import ProjectCard from '../project-card'
 import WidgetNewsletter from '@/components/widget-newsletter'
-import WidgetSponsor from '@/components/widget-sponsor'
 
 import Icon01 from '@/public/images/project-icon-01.svg'
 import Icon02 from '@/public/images/project-icon-02.svg'
@@ -134,7 +133,6 @@ export default function Projects() {
         <div className="space-y-6">
 
           <WidgetNewsletter />
-          <WidgetSponsor />
 
         </div>
       </aside>

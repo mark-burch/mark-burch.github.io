@@ -28,12 +28,13 @@ const aspekta = localFont({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://mark-burch.github.io"),
   title: {
     template: "%s | Mark Burch",
     default: "Mark Burch",
   },
   description:
-    "Mark's thoughts on coding, management in the age of AI and the related politics.",
+    "Mark's thoughts on coding, software engineering in the age of AI and the related politics.",
 };
 
 export default function RootLayout({

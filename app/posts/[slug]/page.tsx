@@ -5,7 +5,6 @@ import { notFound } from 'next/navigation'
 import { CustomMDX } from '@/components/mdx/mdx'
 import PostDate from '@/components/post-date'
 import WidgetNewsletter from '@/components/widget-newsletter'
-import WidgetSponsor from '@/components/widget-sponsor'
 import WidgetPosts from '@/components/widget-posts'
 
 export async function generateStaticParams() {
@@ -122,7 +121,6 @@ export default async function SinglePost(
       <aside className="md:w-[240px] lg:w-[300px] shrink-0">
         <div className="space-y-6">
           <WidgetNewsletter />
-          <WidgetSponsor />
           <WidgetPosts />
         </div>
       </aside>

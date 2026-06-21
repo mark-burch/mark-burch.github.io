@@ -17,7 +17,7 @@ export default function Hero() {
           />
           <h1 className="h1 font-aspekta mb-5">
             I write about <Highlight>coding</Highlight>, software{" "}
-            <Highlight>management</Highlight> and{" "}
+            <Highlight>engineering</Highlight> and{" "}
             <Highlight>politics</Highlight>.
           </h1>
           <p className="text-lg text-slate-500 dark:text-slate-400">

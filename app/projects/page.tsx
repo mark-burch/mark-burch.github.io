@@ -19,34 +19,60 @@ export default function Projects() {
     {
       id: 0,
       icon: Icon01,
-      href: "#0",
-      title: "Container Tinkering",
-      excerpt: "Solutions for running containers locally and remotely.",
+      href: "https://github.com/debezium/debezium/pulls?q=is%3Apr+is%3Aclosed+author%3Amark-burch",
+      title: "Debezium",
+      excerpt:
+        "Contributed several changes as part of my role at MongoDB. This CDC tool is extensively used to migrate snapshot and CDC data between databases. A pure Java codebase with specific database knowledge required to work on the individual connectors.",
       openSource: true,
+      techStack: [
+        "Java",
+        "Postgres",
+        "Oracle",
+        "SQL Server",
+        "MySQL",
+        "Db2",
+        "Sybase",
+      ],
     },
     {
       id: 1,
       icon: Icon02,
-      href: "#0",
-      title: "Engine Prototypes",
-      excerpt: "Solutions for running containers locally and remotely.",
+      href: "https://www.mongodb.com/products/tools/relational-migrator",
+      title: "Relational Migrator",
+      excerpt:
+        "Relational Migrator is a tool designed to help you migrate data from a relational database to MongoDB. It provides a UI to discover your SQL schema, map to a target schema, and migrate. A classic Spring Boot-based backend with a shiny React frontend, fuelled by the power of Apache Kafka and Debezium.",
       openSource: false,
+      techStack: ["Java", "Apache Kafka", "Debezium", "React"],
     },
     {
       id: 2,
       icon: Icon01,
-      href: "#0",
-      title: "Container Tinkering",
-      excerpt: "Solutions for running containers locally and remotely.",
-      openSource: true,
+      href: "https://www.atlassian.com/solutions/devops",
+      title: "Open DevOps",
+      excerpt:
+        "Connects Atlassian entities between different products, providing rich integration experiences such as on-call schedules and deployments in Jira. Spring-based web backend with GraphQL and Postgres.",
+      openSource: false,
+      techStack: ["Kotlin", "React", "GraphQL"],
     },
     {
       id: 3,
       icon: Icon02,
       href: "#0",
-      title: "Engine Prototypes",
-      excerpt: "Solutions for running containers locally and remotely.",
+      title: "Confluence Data Center",
+      excerpt:
+        "Worked on the main product line, delivering enterprise features such as rate limiting and CDNs. Mostly a Java and Spring codebase with some very legacy code still intact at the time - Apache Struts, XWork et al.",
       openSource: false,
+      techStack: ["Java", "React", "Apache Struts"],
+    },
+    {
+      id: 4,
+      icon: Icon02,
+      href: "#0",
+      title: "SanDisk iNAND Firmware",
+      excerpt:
+        "Helped write firmware that ensured temperature resistance and even wear across flash cells, especially triple TLC (Triple Level Cell) storage. Mostly written in C and version controlled by AccuRev which, I hope, has changed since.",
+      openSource: false,
+      techStack: ["C", "Embedded", "Java"],
     },
   ];
 

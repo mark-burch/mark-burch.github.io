@@ -183,7 +183,16 @@ export default function About() {
                     </a>
                     , designed to help companies retire their creaking SQL
                     estates built around older databases like Db2, Sybase and
-                    Oracle in favour of something more modern.
+                    Oracle in favour of something more modern. This was also the
+                    first time I enjoyed some{" "}
+                    <a
+                      className="font-medium text-sky-500 hover:underline"
+                      href="https://thenewstack.io/mongodbs-new-tool-to-move-data-from-relational-systems/"
+                      target="_blank"
+                    >
+                      press coverage
+                    </a>
+                    .
                   </p>
                   <a
                     className="shrink-0 self-center sm:self-start order-first sm:order-none"

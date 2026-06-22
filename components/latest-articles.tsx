@@ -20,7 +20,7 @@ export default function LatestArticles({ posts }: { posts: Post[] }) {
   // Derive the tab list from the tags used across all posts
   const tabs = useMemo(
     () =>
-      Array.from(new Set(posts.flatMap((post) => post.metadata.tags ?? []))),
+      [...new Set(posts.flatMap((post) => post.metadata.tags ?? []))],
     [posts],
   );
 

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Highlight from "@/components/highlight";
 
 export const metadata = {
@@ -19,81 +20,198 @@ export default function About() {
             {/* Page content */}
             <div className="text-slate-500 dark:text-slate-400 space-y-8">
               <div className="space-y-4">
-                <h2 className="h3 font-aspekta text-slate-800 dark:text-slate-100">
-                  Short Bio
-                </h2>
                 <p>
-                  I'm a passionate and driven engineering manager with a
-                  background in backend systems. I still code regularly and have
-                  spent the last 15+ years contributing to various large-scale
-                  commercial products, primarily using JVM tech stacks. I also
-                  contribute to a few large open-source Java projects such as
-                  Apache Kafka, Debezium and a few OpenAPI projects.
+                  Passionate and driven engineering manager with a background in
+                  backend systems. I still code regularly and have spent the
+                  last 15+ years contributing to various large-scale commercial
+                  products, primarily using JVM tech stacks. I also contribute
+                  to a few large open-source Java projects such as Apache Kafka,
+                  Debezium and a few OpenAPI projects.
                 </p>
               </div>
               <div className="space-y-4">
                 <h2 className="h3 font-aspekta text-slate-800 dark:text-slate-100">
                   Career
                 </h2>
-                <p>
-                  In my role as a Senior Software Engineer for Google Chrome, I
-                  am responsible for developing and maintaining the{" "}
+                <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
+                  <p>
+                    I started with firmware development in C/C++ for{" "}
+                    <a
+                      className="font-medium text-sky-500 hover:underline"
+                      href="https://www.sandisk.com"
+                      target="_blank"
+                    >
+                      SanDisk
+                    </a>{" "}
+                    back in 2013. I worked on a few important modules, most
+                    notably the ones managing NAND flash cell health degradation
+                    due to both cycling and ambient temperature. In addition, we
+                    developed an in-house full-stack Java app to aggregate and
+                    analyse experiment logs. An example of a SanDisk product
+                    that ships with such firmware is the{" "}
+                    <a
+                      className="font-medium text-sky-500 hover:underline"
+                      href="https://www.sandisk.com/en-au/products/embedded-flash/industrial-inand-emmc-drives"
+                      target="_blank"
+                    >
+                      industrial-grade eMMC embedded flash drive
+                    </a>
+                    . If you've ever trusted a phone, a camera or a car with
+                    your data, you've run firmware I helped write.
+                  </p>
                   <a
-                    className="font-medium text-sky-500 hover:underline"
-                    href="#0"
+                    className="shrink-0 self-center sm:self-start order-first sm:order-none"
+                    href="https://www.sandisk.com/en-au/products/embedded-flash/industrial-inand-emmc-drives"
+                    target="_blank"
                   >
-                    Chrome Web Browser
+                    <Image
+                      className="rounded-lg w-36"
+                      src="/images/sandisk-inand.webp"
+                      width={180}
+                      height={180}
+                      alt="SanDisk industrial-grade eMMC embedded flash drive"
+                    />
                   </a>
-                  .
-                </p>
-                <p>
-                  My work involves developing and testing new features,
-                  optimizing performance and security, and ensuring the browser
-                  works for users around the world. I also work closely with
-                  other Google teams ensure Chrome is well-integrated with other{" "}
+                </div>
+                <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
                   <a
-                    className="font-medium text-sky-500 hover:underline"
-                    href="#0"
+                    className="shrink-0 self-center sm:self-start"
+                    href="https://www.atlassian.com"
+                    target="_blank"
                   >
-                    Google
-                  </a>{" "}
-                  products and services.
-                </p>
-                <p>
-                  As CTO of AppForYou,{" "}
-                  <strong className="font-medium text-slate-800 dark:text-slate-100">
-                    I am responsible for leading
-                  </strong>{" "}
-                  the technical teamand developing the company's technology
-                  strategy. I work closely with the engineering team to ensure
-                  that the products and services we provide are secure.
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <h2 className="h3 font-aspekta text-slate-800 dark:text-slate-100">
-                  Let's Connect
-                </h2>
-                <p>
-                  I'm excited to connect with others via{" "}
+                    <Image
+                      className="rounded-lg w-24"
+                      src="/images/atlassian.svg"
+                      width={180}
+                      height={180}
+                      alt="Atlassian"
+                    />
+                  </a>
+                  <p>
+                    I then joined{" "}
+                    <a
+                      className="font-medium text-sky-500 hover:underline"
+                      href="https://www.atlassian.com"
+                      target="_blank"
+                    >
+                      Atlassian
+                    </a>{" "}
+                    as an individual contributor to work on what was then (and
+                    probably still is) the world's most widely used
+                    collaboration software —{" "}
+                    <a
+                      className="font-medium text-sky-500 hover:underline"
+                      href="https://www.atlassian.com/enterprise/data-center/confluence"
+                      target="_blank"
+                    >
+                      Confluence
+                    </a>
+                    . The team worked on several high-profile resilience and
+                    availability features like rate limiting, likely
+                    facilitating a better night's sleep for your Confluence Data
+                    Center admin.
+                  </p>
+                </div>
+                <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
                   <a
-                    className="font-medium text-sky-500 hover:underline"
-                    href="#0"
+                    className="shrink-0 self-center sm:self-start"
+                    href="https://www.atlassian.com/enterprise/data-center/confluence"
+                    target="_blank"
                   >
-                    email
-                  </a>{" "}
-                  and{" "}
+                    <Image
+                      className="rounded-lg w-24"
+                      src="/images/atlassian-confluence.svg"
+                      width={180}
+                      height={180}
+                      alt="Confluence"
+                    />
+                  </a>
+                  <p>
+                    Within a few years I transitioned into a management role to
+                    lead one of the{" "}
+                    <a
+                      className="font-medium text-sky-500 hover:underline"
+                      href="https://www.atlassian.com/solutions/devops"
+                      target="_blank"
+                    >
+                      Open DevOps
+                    </a>{" "}
+                    teams. The team operated on a YBIYRI ("You Build It, You Run
+                    It") basis — pager included. We owned several microservices
+                    and UI pieces within Atlassian's cloud offering.
+                  </p>
+                </div>
+                <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
+                  <p>
+                    Next up: Engineering lead at the{" "}
+                    <a
+                      className="font-medium text-sky-500 hover:underline"
+                      href="https://www.mongodb.com"
+                      target="_blank"
+                    >
+                      MongoDB
+                    </a>{" "}
+                    Sydney branch, which seems to surprise a lot of people who
+                    aren't aware of MongoDB's Australian presence. Fun fact: the
+                    storage engine that powers the database was homegrown in
+                    Sydney all the way back in 2010. No Sydney, no MongoDB.
+                  </p>
                   <a
-                    className="font-medium text-sky-500 hover:underline"
-                    href="#0"
+                    className="shrink-0 self-center sm:self-start order-first sm:order-none"
+                    href="https://www.mongodb.com"
+                    target="_blank"
                   >
-                    Twitter
-                  </a>{" "}
-                  to chat about projects and ideas. Currently, I'm not taking on
-                  freelance projects, but I am open to hearing about potential
-                  opportunities, discussing them with you and then potentially
-                  collaborating if it's a good fit.
-                </p>
+                    <Image
+                      className="rounded-lg w-36"
+                      src="/images/mongodb.svg"
+                      width={180}
+                      height={180}
+                      alt="MongoDB"
+                    />
+                  </a>
+                </div>
+                <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
+                  <p>
+                    Our team of intrepid developers, designers and product
+                    managers worked on a set of tools, most notably{" "}
+                    <a
+                      className="font-medium text-sky-500 hover:underline"
+                      href="https://www.mongodb.com/products/tools/relational-migrator"
+                      target="_blank"
+                    >
+                      Relational Migrator
+                    </a>
+                    , designed to help companies retire their creaking SQL
+                    estates built around older databases like Db2, Sybase and
+                    Oracle in favour of something more modern.
+                  </p>
+                  <a
+                    className="shrink-0 self-center sm:self-start order-first sm:order-none"
+                    href="https://www.mongodb.com/products/tools/relational-migrator"
+                    target="_blank"
+                  >
+                    <Image
+                      className="rounded-lg w-36"
+                      src="/images/mongodb-migrator.svg"
+                      width={180}
+                      height={180}
+                      alt="MongoDB Relational Migrator"
+                    />
+                  </a>
+                </div>
+                <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
+                  <Image
+                    className="rounded-lg w-24 shrink-0 self-center sm:self-start"
+                    src="/images/covalent.jpg"
+                    width={180}
+                    height={180}
+                    alt="Covalent"
+                  />
+                  <p>
+                    Now, in a modern David vs. Goliath story and back in a
+                    hands-on role, I am working on displacing an industry giant.
+                  </p>
+                </div>
               </div>
             </div>
           </section>

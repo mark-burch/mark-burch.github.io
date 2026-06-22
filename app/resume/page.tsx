@@ -1,8 +1,6 @@
 import Education from "@/components/education";
 import Experience from "@/components/experience";
-import Awards from "@/components/awards";
-import Recommendations from "@/components/recommendations";
-import WidgetReferences from "@/components/widget-references";
+import Patents from "@/components/patents";
 
 export const metadata = {
   title: "Resume",
@@ -16,24 +14,32 @@ export default function Resume() {
         <div className="max-w-[700px]">
           <section>
             {/* Page title */}
-            <h1 className="h1 font-aspekta mb-12">My resume</h1>
+            <h1 className="h1 font-aspekta mb-12">Resume</h1>
             {/* Page content */}
             <div className="text-slate-500 dark:text-slate-400 space-y-12">
-              <Education />
               <Experience />
-              <Awards />
-              <Recommendations />
+              <Patents />
+              <Education />
+              <div className="space-y-4">
+                <h2 className="h3 font-aspekta text-slate-800 dark:text-slate-100">
+                  Recommendations
+                </h2>
+                <p>
+                  See{" "}
+                  <a
+                    className="font-medium text-sky-500 hover:underline"
+                    href="https://www.linkedin.com/in/mark-bur"
+                    target="_blank"
+                  >
+                    LinkedIn
+                  </a>{" "}
+                  and feel free to ask me for references.
+                </p>
+              </div>
             </div>
           </section>
         </div>
       </div>
-
-      {/* Right sidebar */}
-      <aside className="md:w-[240px] lg:w-[300px] shrink-0">
-        <div className="space-y-6">
-          <WidgetReferences />
-        </div>
-      </aside>
     </div>
   );
 }

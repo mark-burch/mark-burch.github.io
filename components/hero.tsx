@@ -21,10 +21,9 @@ export default function Hero() {
             <Highlight>politics</Highlight>.
           </h1>
           <p className="text-lg text-slate-500 dark:text-slate-400">
-            Started with firmware development. Worked on the most prominent
-            collaboration software suite in the world. Later, helped
-            organisations migrate off legacy SQL estates. Now, back in a
-            hands-on role, I am working on displacing an industry giant.
+            These are my own thoughts, experiences and learnings from a 15+ year
+            software engineering career. <Highlight>No AI</Highlight> — not even
+            a spellchecker.
           </p>
         </div>
       </div>

@@ -32,8 +32,8 @@ export default function Resume() {
                     target="_blank"
                   >
                     LinkedIn
-                  </a>{" "}
-                  and feel free to ask me for references.
+                  </a>
+                  . I would love to provide references if needed, as well.
                 </p>
               </div>
             </div>

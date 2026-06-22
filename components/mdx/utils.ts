@@ -10,7 +10,10 @@ type Metadata = {
   summary?: string;
   author?: string;
   authorImg?: string;
+  tags?: string[];
 };
+
+type Post = { metadata: Metadata; slug: string; content?: string };
 
 function getMDXFiles(dir: string) {
   return fs.readdirSync(dir).filter((file) => path.extname(file) === ".mdx");
@@ -22,19 +25,17 @@ function readMDXFile(filePath: string) {
   return { metadata: data as Metadata, content: content.trim() };
 }
 
-function getMDXData(dir: string) {
-  const mdxFiles = getMDXFiles(dir);
-  return mdxFiles.map((file) => {
-    const { metadata, content } = readMDXFile(path.join(dir, file));
-    const slug = path.basename(file, path.extname(file));
-    return {
-      metadata,
-      slug,
-      content,
-    };
-  });
-}
-
-export function getBlogPosts() {
-  return getMDXData(path.join(process.cwd(), "content/blog"));
+export function getBlogPosts(includeContent = true): Post[] {
+  const dir = path.join(process.cwd(), "content/blog");
+  return getMDXFiles(dir)
+    .map((file) => {
+      const { metadata, content } = readMDXFile(path.join(dir, file));
+      const slug = path.basename(file, path.extname(file));
+      return includeContent ? { metadata, slug, content } : { metadata, slug };
+    })
+    .sort((a, b) =>
+      new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)
+        ? -1
+        : 1,
+    );
 }

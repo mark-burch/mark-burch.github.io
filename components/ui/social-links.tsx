@@ -11,6 +11,7 @@ export default function SocialLinks({ className = "" }: SocialLinksProps) {
         <a
           className="flex justify-center items-center text-slate-800 hover:text-sky-500 dark:text-slate-200 dark:hover:text-sky-500 transition duration-150 ease-in-out"
           href="https://github.com/mark-burch"
+          target="_blank"
           aria-label="GitHub"
         >
           <svg
@@ -25,7 +26,8 @@ export default function SocialLinks({ className = "" }: SocialLinksProps) {
       <li>
         <a
           className="flex justify-center items-center text-slate-800 hover:text-sky-500 dark:text-slate-200 dark:hover:text-sky-500 transition duration-150 ease-in-out"
-          href="#0"
+          href="https://www.linkedin.com/in/mark-bur"
+          target="_blank"
           aria-label="LinkedIn"
         >
           {/* Bootstrap Icons LinkedIn (native 16×16); viewBox padded to -8 -8 32 32 so the glyph fills ~50% of the box, matching the other icons */}

@@ -1,7 +1,4 @@
-import Image from "next/image";
 import Highlight from "@/components/highlight";
-import AboutImg from "@/public/images/about.png";
-import Experience from "@/components/experience";
 
 export const metadata = {
   title: "About",
@@ -16,15 +13,9 @@ export default function About() {
           <section>
             {/* Page title */}
             <h1 className="h1 font-aspekta mb-5">
-              Hi. I'm Mark <Highlight>@mrk27</Highlight> Ivings 🤟
+              Hi. I'm <Highlight>Mark Burch</Highlight>.
             </h1>
-            <Image
-              className="w-full"
-              src={AboutImg}
-              width={692}
-              height={390}
-              alt="About"
-            />
+
             {/* Page content */}
             <div className="text-slate-500 dark:text-slate-400 space-y-8">
               <div className="space-y-4">
@@ -32,15 +23,12 @@ export default function About() {
                   Short Bio
                 </h2>
                 <p>
-                  I'm a software engineer with more than 10 years of experience
-                  in a variety of domains. For the past few years, I've focused
-                  on highload server-side projects, distributed systems, and
-                  platform development - tinkering with infrastructure, all
-                  things containers and Cloud Native.
-                </p>
-                <p>
-                  While there isn't a Wikipedia page about me (sorry folks!), a
-                  media bio is available below.
+                  I'm a passionate and driven engineering manager with a
+                  background in backend systems. I still code regularly and have
+                  spent the last 15+ years contributing to various large-scale
+                  commercial products, primarily using JVM tech stacks. I also
+                  contribute to a few large open-source Java projects such as
+                  Apache Kafka, Debezium and a few OpenAPI projects.
                 </p>
               </div>
               <div className="space-y-4">
@@ -81,8 +69,6 @@ export default function About() {
                   that the products and services we provide are secure.
                 </p>
               </div>
-
-              <Experience />
 
               <div className="space-y-4">
                 <h2 className="h3 font-aspekta text-slate-800 dark:text-slate-100">

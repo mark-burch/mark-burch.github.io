@@ -1,9 +1,9 @@
 import Link from "next/link";
-import Image, { StaticImageData } from "next/image";
+import { ReactNode } from "react";
 
 interface Item {
   id: number;
-  icon: StaticImageData;
+  logo: ReactNode;
   href: string;
   title: string;
   excerpt: string;
@@ -26,7 +26,7 @@ export default function ProjectCard({ item }: ItemProps) {
         <div className="grow">
           <div className="flex items-center justify-between space-x-2">
             <div className="h-10 w-10 flex items-center justify-center border border-slate-200 dark:border-slate-700 rounded-full mb-2">
-              <Image src={item.icon} width={18} alt={item.title} />
+              {item.logo}
             </div>
             {item.openSource && (
               <div className="text-xs inline-flex items-center font-medium bg-green-100 text-green-600 rounded-full text-center px-2 h-5">

@@ -1,13 +1,6 @@
 import ProjectCard from "../project-card";
 
-import Icon01 from "@/public/images/project-icon-01.svg";
-import Icon02 from "@/public/images/project-icon-02.svg";
-import Icon03 from "@/public/images/project-icon-03.svg";
-import Icon04 from "@/public/images/project-icon-04.svg";
-import Icon05 from "@/public/images/project-icon-05.svg";
-import Icon06 from "@/public/images/project-icon-06.svg";
-import Icon07 from "@/public/images/project-icon-07.svg";
-import Icon08 from "@/public/images/project-icon-08.svg";
+import { Atlassian, Debezium, MongoDB, WesternDigital } from "@/components/logos";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -18,7 +11,7 @@ export default function Projects() {
   const items01 = [
     {
       id: 0,
-      icon: Icon01,
+      logo: <Debezium />,
       href: "https://github.com/debezium/debezium/pulls?q=is%3Apr+is%3Aclosed+author%3Amark-burch",
       title: "Debezium",
       excerpt:
@@ -36,7 +29,7 @@ export default function Projects() {
     },
     {
       id: 1,
-      icon: Icon02,
+      logo: <MongoDB />,
       href: "https://www.mongodb.com/products/tools/relational-migrator",
       title: "Relational Migrator",
       excerpt:
@@ -46,7 +39,7 @@ export default function Projects() {
     },
     {
       id: 2,
-      icon: Icon01,
+      logo: <Atlassian />,
       href: "https://www.atlassian.com/solutions/devops",
       title: "Open DevOps",
       excerpt:
@@ -56,7 +49,7 @@ export default function Projects() {
     },
     {
       id: 3,
-      icon: Icon02,
+      logo: <Atlassian />,
       href: "#0",
       title: "Confluence Data Center",
       excerpt:
@@ -66,7 +59,7 @@ export default function Projects() {
     },
     {
       id: 4,
-      icon: Icon02,
+      logo: <WesternDigital />,
       href: "#0",
       title: "SanDisk iNAND Firmware",
       excerpt:

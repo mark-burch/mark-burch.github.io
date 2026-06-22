@@ -5,6 +5,7 @@ import localFont from "next/font/local";
 import Theme from "./theme-provider";
 import SideNavigation from "@/components/ui/side-navigation";
 import Header from "@/components/ui/header";
+import type { Metadata } from "next";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -27,14 +28,36 @@ const aspekta = localFont({
   display: "swap",
 });
 
-export const metadata = {
+const siteDescription =
+  "Mark's thoughts on coding, software engineering in the age of AI and the related politics.";
+
+export const metadata: Metadata = {
   metadataBase: new URL("https://mark-burch.github.io"),
   title: {
     template: "%s | Mark Burch",
     default: "Mark Burch",
   },
-  description:
-    "Mark's thoughts on coding, software engineering in the age of AI and the related politics.",
+  description: siteDescription,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    url: "/",
+    siteName: "Mark Burch",
+    title: "Mark Burch",
+    description: siteDescription,
+    locale: "en_AU",
+    images: [
+      { url: "/images/me.jpg", width: 120, height: 120, alt: "Mark Burch" },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: "Mark Burch",
+    description: siteDescription,
+    images: ["/images/me.jpg"],
+  },
 };
 
 export default function RootLayout({

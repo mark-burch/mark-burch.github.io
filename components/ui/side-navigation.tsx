@@ -21,7 +21,7 @@ export default function SideNavigation() {
                   width={32}
                   height={32}
                   priority
-                  alt="Me"
+                  alt="Mark Burch"
                 />
               </Link>
             </div>
@@ -35,7 +35,6 @@ export default function SideNavigation() {
                   href="/"
                   className={`w-full h-6 flex items-center justify-center relative after:absolute after:w-0.5 after:right-0 after:top-0 after:bottom-0 ${
                     pathname !== "/about" &&
-                    pathname !== "/subscribe" &&
                     pathname !== "/projects" &&
                     pathname !== "/resume"
                       ? "text-sky-500 after:bg-sky-500"

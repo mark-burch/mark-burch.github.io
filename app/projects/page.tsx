@@ -92,9 +92,14 @@ export default function Projects() {
         <div className="max-w-[700px]">
           <section>
             {/* Page title */}
-            <h1 className="h1 font-aspekta mb-12">Projects</h1>
+            <h1 className="h1 font-aspekta mb-5">Projects</h1>
             {/* Page content */}
-            <div className="space-y-10">
+            <div className="space-y-8">
+              <p className="text-slate-500 dark:text-slate-400">
+                Like the vast majority of anyone who's ever written code, most
+                of mine is private and proprietary. Here are a few things I can
+                share.
+              </p>
               {/* Side Hustles cards */}
               <section>
                 <h2 className="font-aspekta text-xl font-[650] mb-6">

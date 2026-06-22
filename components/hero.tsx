@@ -13,7 +13,7 @@ export default function Hero() {
             width={56}
             height={56}
             priority
-            alt="Me"
+            alt="Mark Burch"
           />
           <h1 className="h1 font-aspekta mb-5">
             I write about <Highlight>coding</Highlight>, software{" "}

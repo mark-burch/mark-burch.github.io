@@ -1,10 +1,9 @@
 import { getBlogPosts } from "@/components/mdx/utils";
 import Hero from "@/components/hero";
 import PostItem from "./post-item";
-import Talks from "@/components/talks";
-import FeaturedProjects from "@/components/featured-projects";
 import WidgetBook from "@/components/widget-book";
 import WidgetPodcast from "@/components/widget-podcast";
+import WidgetReading from "@/components/widget-reading";
 
 export default async function Home() {
   const allBlogs = getBlogPosts();
@@ -45,7 +44,7 @@ export default async function Home() {
                       className="block py-3 text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
                       href="#0"
                     >
-                      Startups
+                      Engineering
                     </a>
                   </li>
                   <li className="px-3 -mb-px">
@@ -53,15 +52,7 @@ export default async function Home() {
                       className="block py-3 text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
                       href="#0"
                     >
-                      Tutorials
-                    </a>
-                  </li>
-                  <li className="px-3 -mb-px">
-                    <a
-                      className="block py-3 text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
-                      href="#0"
-                    >
-                      Indie Hacking
+                      Everything else
                     </a>
                   </li>
                 </ul>
@@ -73,9 +64,6 @@ export default async function Home() {
                   ))}
                 </div>
               </section>
-
-              <Talks />
-              <FeaturedProjects />
             </div>
           </div>
         </div>
@@ -83,6 +71,7 @@ export default async function Home() {
         {/* Right sidebar */}
         <aside className="md:w-[240px] lg:w-[300px] shrink-0">
           <div className="space-y-6">
+            <WidgetReading />
             <WidgetBook />
             <WidgetPodcast />
           </div>

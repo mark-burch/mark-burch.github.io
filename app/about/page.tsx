@@ -66,7 +66,7 @@ export default function About() {
                   >
                     <Image
                       className="rounded-lg w-36"
-                      src="/images/sandisk-inand.webp"
+                      src="/images/about/sandisk-inand.webp"
                       width={180}
                       height={180}
                       alt="SanDisk industrial-grade eMMC embedded flash drive"
@@ -81,7 +81,7 @@ export default function About() {
                   >
                     <Image
                       className="rounded-lg w-24"
-                      src="/images/atlassian.svg"
+                      src="/images/about/atlassian.svg"
                       width={180}
                       height={180}
                       alt="Atlassian"
@@ -120,7 +120,7 @@ export default function About() {
                   >
                     <Image
                       className="rounded-lg w-24"
-                      src="/images/atlassian-confluence.svg"
+                      src="/images/about/atlassian-confluence.svg"
                       width={180}
                       height={180}
                       alt="Confluence"
@@ -163,7 +163,7 @@ export default function About() {
                   >
                     <Image
                       className="rounded-lg w-36"
-                      src="/images/mongodb.svg"
+                      src="/images/about/mongodb.svg"
                       width={180}
                       height={180}
                       alt="MongoDB"
@@ -192,7 +192,7 @@ export default function About() {
                   >
                     <Image
                       className="rounded-lg w-36"
-                      src="/images/mongodb-migrator.svg"
+                      src="/images/about/mongodb-migrator.svg"
                       width={180}
                       height={180}
                       alt="MongoDB Relational Migrator"
@@ -202,7 +202,7 @@ export default function About() {
                 <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
                   <Image
                     className="rounded-lg w-24 shrink-0 self-center sm:self-start"
-                    src="/images/covalent.jpg"
+                    src="/images/about/covalent.jpg"
                     width={180}
                     height={180}
                     alt="Covalent"

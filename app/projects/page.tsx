@@ -1,6 +1,11 @@
 import ProjectCard from "../project-card";
 
-import { Atlassian, Debezium, MongoDB, WesternDigital } from "@/components/logos";
+import {
+  Atlassian,
+  Debezium,
+  MongoDB,
+  WesternDigital,
+} from "@/components/logos";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -50,7 +55,7 @@ export default function Projects() {
     {
       id: 3,
       logo: <Atlassian />,
-      href: "#0",
+      href: "https://www.atlassian.com/enterprise/data-center/confluence",
       title: "Confluence Data Center",
       excerpt:
         "Worked on the main product line, delivering enterprise features such as rate limiting and CDNs. Mostly a Java and Spring codebase with some very legacy code still intact at the time - Apache Struts, XWork et al.",
@@ -60,7 +65,7 @@ export default function Projects() {
     {
       id: 4,
       logo: <WesternDigital />,
-      href: "#0",
+      href: "https://www.sandisk.com/en-au/products/embedded-flash/industrial-inand-emmc-drives",
       title: "SanDisk iNAND Firmware",
       excerpt:
         "Helped write firmware that ensured temperature resistance and even wear across flash cells, especially triple TLC (Triple Level Cell) storage. Mostly written in C and version controlled by AccuRev which, I hope, has changed since.",

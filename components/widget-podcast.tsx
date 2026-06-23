@@ -1,21 +1,45 @@
-import Image from "next/image";
-import Book from "@/public/images/book.png";
+import Widget from "@/components/widget";
 
 export default function WidgetPodcast() {
   return (
-    <div className="rounded-lg border border-slate-200 dark:border-slate-800 dark:bg-linear-to-t dark:from-slate-800 dark:to-slate-800/30 odd:rotate-1 even:-rotate-1 p-5">
-      <div className="font-aspekta font-[650] text-center mb-3">
-        Recommended Podcast
-      </div>
-      <div className="text-center">
-        <Image
-          className="inline-flex rounded-lg shadow-lg rotate-3"
-          src={Book}
-          width={148}
-          height={190}
-          alt="Book"
-        />
-      </div>
-    </div>
+    <Widget
+      title="Recommended Podcast"
+      image="/images/recommendations/cal-newport-deep-questions.jpg"
+      content={
+        <>
+          Hosted by computer-science professor and bestselling author Cal
+          Newport, the podcast presents, in my opinion, one of the most balanced
+          and nuanced takes on AI that I've seen.
+        </>
+      }
+      Footer={
+        <>
+          Favourite episodes:{" "}
+          <a
+            className="font-medium text-sky-500 hover:underline"
+            href="https://www.thedeeplife.com/podcasts/episodes/has-ai-conquered-coding-its-not-so-simple-ai-reality-check/"
+            target="_blank"
+          >
+            Has AI conquered coding?
+          </a>
+          ,{" "}
+          <a
+            className="font-medium text-sky-500 hover:underline"
+            href="https://www.thedeeplife.com/podcasts/episodes/are-we-about-to-lose-control-of-ai-ai-reality-check/"
+            target="_blank"
+          >
+            Are we about to lose control of AI?
+          </a>
+          ,{" "}
+          <a
+            className="font-medium text-sky-500 hover:underline"
+            href="https://www.thedeeplife.com/podcasts/episodes/do-i-need-a-brain-gym-monday-advice/"
+            target="_blank"
+          >
+            Do I need a brain gym?
+          </a>
+        </>
+      }
+    />
   );
 }

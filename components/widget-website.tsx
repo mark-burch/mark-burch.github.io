@@ -1,21 +1,28 @@
-import Image from "next/image";
-import Book from "@/public/images/book.png";
+import Widget from "@/components/widget";
 
 export default function WidgetWebsite() {
   return (
-    <div className="rounded-lg border border-slate-200 dark:border-slate-800 dark:bg-linear-to-t dark:from-slate-800 dark:to-slate-800/30 odd:rotate-1 even:-rotate-1 p-5">
-      <div className="font-aspekta font-[650] text-center mb-3">
-        Recommended Website
-      </div>
-      <div className="text-center">
-        <Image
-          className="inline-flex rounded-lg shadow-lg rotate-3"
-          src={Book}
-          width={148}
-          height={190}
-          alt="Book"
-        />
-      </div>
-    </div>
+    <Widget
+      title="Recommended Website"
+      image="/images/book.png"
+      content={
+        <>
+          A line or two about the website here — what it offers and why you keep
+          coming back to it.
+        </>
+      }
+      Footer={
+        <>
+          Visit:{" "}
+          <a
+            className="font-medium text-sky-500 hover:underline"
+            href="#"
+            target="_blank"
+          >
+            Link
+          </a>
+        </>
+      }
+    />
   );
 }

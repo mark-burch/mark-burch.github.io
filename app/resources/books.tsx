@@ -22,4 +22,27 @@ export const BOOKS = [
     ),
     footer: <></>,
   },
+  {
+    id: 1,
+    image: "/images/recommendations/books/team-topologies.jpg",
+    title: "Team Topologies",
+    summary: (
+      <>
+        The book broadly discusses different software engineering team
+        archetypes (for example, product stream-aligned teams and platform
+        teams) and how to incentivise them in the right manner in order to
+        prevent silos and avoid the very common trap of shipping your
+        organisation's communication structure (Conway's Law).
+      </>
+    ),
+    extended: (
+      <>
+        One aspect that AI has not encroached on (yet) is the actual
+        organisational structures and team compositions in software companies.
+        The book does a good job of formalising the art and, perhaps more
+        importantly, lays out a bunch of anti-patterns that we've all observed.
+      </>
+    ),
+    footer: <></>,
+  },
 ];

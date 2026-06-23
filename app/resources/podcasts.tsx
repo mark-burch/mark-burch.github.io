@@ -58,7 +58,7 @@ export const PODCASTS = [
     title: "Tech Won't Save Us",
     summary: (
       <>
-        Award winning left-wing tech podcast hosted by Canadian technology
+        Award-winning left-wing tech podcast hosted by Canadian technology
         writer Paris Marx. Each episode has a guest or two on to discuss tech
         news stories that mainstream media outlets are unlikely to pick up and
         provides a different perspective on an industry that has so much
@@ -68,7 +68,7 @@ export const PODCASTS = [
     extended: (
       <>
         The podcast acts as an excellent critique of the tech industry but
-        sometimes has a habit of veering into politics which Australian or
+        sometimes has a habit of veering into politics, which Australian or
         non-US listeners might find less interesting. Favourite episodes are
         about the human impact of tech (LLMs in the classroom, anyone?).
       </>

@@ -13,11 +13,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  const routes = ["", "/about", "/projects", "/resume"].map((path) => ({
-    url: `${baseUrl}${path}`,
-    changeFrequency: "monthly" as const,
-    priority: path === "" ? 1 : 0.8,
-  }));
+  const routes = ["", "/about", "/projects", "/resume", "/resources"].map(
+    (path) => ({
+      url: `${baseUrl}${path}`,
+      changeFrequency: "monthly" as const,
+      priority: path === "" ? 1 : 0.8,
+    }),
+  );
 
   return [...routes, ...posts];
 }

@@ -1,8 +1,9 @@
 import Education from "@/components/education";
 import Experience from "@/components/experience";
 import Patents from "@/components/patents";
+import { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Resume",
 };
 

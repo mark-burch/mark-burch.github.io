@@ -36,7 +36,8 @@ export default function SideNavigation() {
                   className={`w-full h-6 flex items-center justify-center relative after:absolute after:w-0.5 after:right-0 after:top-0 after:bottom-0 ${
                     pathname !== "/about" &&
                     pathname !== "/projects" &&
-                    pathname !== "/resume"
+                    pathname !== "/resume" &&
+                    pathname !== "/resources"
                       ? "text-sky-500 after:bg-sky-500"
                       : "text-slate-400 hover:text-slate-500 dark:text-slate-500 dark:hover:text-slate-400"
                   }`}
@@ -122,6 +123,33 @@ export default function SideNavigation() {
                     <path
                       fillRule="nonzero"
                       d="M2 6v12h14V6H2Zm16-2v16H0V4h18ZM2 2V0h14v2H2Z"
+                    />
+                  </svg>
+                </Link>
+              </li>
+              <li className="py-2">
+                <Link
+                  href="/resources"
+                  className={`w-full h-6 flex items-center justify-center relative after:absolute after:w-0.5 after:right-0 after:top-0 after:bottom-0 ${
+                    pathname === "/resources"
+                      ? "text-sky-500 after:bg-sky-500"
+                      : "text-slate-400 hover:text-slate-500 dark:text-slate-500 dark:hover:text-slate-400"
+                  }`}
+                >
+                  <span className="sr-only">Resources</span>
+                  <svg
+                    className="fill-current"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                  >
+                    <path
+                      fillOpacity=".16"
+                      d="M11 0.6 13.84 8.19 21.94 8.54 15.59 13.59 17.76 21.4 11 16.93 4.24 21.4 6.41 13.59 0.06 8.54 8.16 8.19Z"
+                    />
+                    <path
+                      fillRule="evenodd"
+                      d="M11 0.6 13.84 8.19 21.94 8.54 15.59 13.59 17.76 21.4 11 16.93 4.24 21.4 6.41 13.59 0.06 8.54 8.16 8.19ZM11 7.45 12.15 10.52 15.42 10.66 12.86 12.7 13.73 15.86 11 14.05 8.27 15.86 9.14 12.7 6.58 10.66 9.85 10.52Z"
                     />
                   </svg>
                 </Link>

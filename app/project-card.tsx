@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ReactNode } from "react";
 
-interface Item {
+interface Project {
   id: number;
   logo: ReactNode;
   href: string;
@@ -11,11 +11,11 @@ interface Item {
   techStack?: string[];
 }
 
-interface ItemProps {
-  item: Item;
+interface ProjectCardProps {
+  item: Project;
 }
 
-export default function ProjectCard({ item }: ItemProps) {
+export default function ProjectCard({ item }: ProjectCardProps) {
   return (
     <Link
       className="rounded-lg border border-slate-200 hover:border-slate-300 dark:border-slate-800 dark:hover:border-slate-700 dark:bg-linear-to-t dark:from-slate-800 dark:to-slate-800/30 transition-color ease-in-out p-5 group"

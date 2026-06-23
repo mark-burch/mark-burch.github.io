@@ -3,7 +3,7 @@ import Hero from "@/components/hero";
 import LatestArticles from "@/components/latest-articles";
 import WidgetBook from "@/components/widget-book";
 import WidgetPodcast from "@/components/widget-podcast";
-import WidgetReading from "@/components/widget-reading";
+import WidgetWebsite from "@/components/widget-website";
 
 export default async function Home() {
   const posts = getBlogPosts(false);
@@ -25,9 +25,9 @@ export default async function Home() {
         {/* Right sidebar */}
         <aside className="md:w-[240px] lg:w-[300px] shrink-0">
           <div className="space-y-6">
-            <WidgetReading />
-            <WidgetBook />
             <WidgetPodcast />
+            <WidgetBook />
+            <WidgetWebsite />
           </div>
         </aside>
       </div>

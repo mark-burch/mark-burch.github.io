@@ -38,8 +38,8 @@ export const BOOKS = [
     extended: (
       <>
         One aspect that AI has not encroached on (yet) is the actual
-        organisational structures and team compositions in software companies.
-        The book does a good job of formalising the art and, perhaps more
+        organisational structure and team composition in software companies. The
+        book does a good job of formalising the art and, perhaps more
         importantly, lays out a bunch of anti-patterns that we've all observed.
       </>
     ),
@@ -57,14 +57,15 @@ export const BOOKS = [
         into a closed, hyper-scaling commercial juggernaut. Her thesis is that
         the race to AGI runs on colonial-style extractive practice: vacuum up
         the world's data without consent, lean on cheap exploited labour, and
-        burn egregious compute and resources to brute-force capability.
+        burn egregious amounts of compute and resources to brute-force
+        capability.
       </>
     ),
     extended: (
       <>
         The colonialism analogy was a bit heavy-handed and some events are
-        probably over-dramatised (for example, Altman's exit and reinstatement
-        into OpenAI). Worth a read, still.
+        probably over-dramatised (for example, Altman's exit from and
+        reinstatement into OpenAI). Worth a read, still.
       </>
     ),
     footer: <></>,

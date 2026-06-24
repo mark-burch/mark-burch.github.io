@@ -10,6 +10,24 @@ export default function SocialLinks({ className = "" }: SocialLinksProps) {
       <li>
         <a
           className="flex justify-center items-center text-slate-800 hover:text-sky-500 dark:text-slate-200 dark:hover:text-sky-500 transition duration-150 ease-in-out"
+          href="mailto:mark@markburch.dev"
+          aria-label="Email"
+        >
+          <svg
+            className="w-8 h-8 fill-current"
+            viewBox="-8 -8 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fillRule="evenodd"
+              d="M1 3H15V13H1Z M1 3L8 8L15 3L15 4.5L8 9.5L1 4.5Z"
+            />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a
+          className="flex justify-center items-center text-slate-800 hover:text-sky-500 dark:text-slate-200 dark:hover:text-sky-500 transition duration-150 ease-in-out"
           href="https://github.com/mark-burch"
           target="_blank"
           aria-label="GitHub"

@@ -34,7 +34,14 @@ export default function Resume() {
                   >
                     LinkedIn
                   </a>
-                  . I would love to provide references if needed, as well.
+                  . Happy to provide references if needed —{" "}
+                  <a
+                    className="font-medium text-sky-500 hover:underline"
+                    href="mailto:mark@markburch.dev"
+                  >
+                    email
+                  </a>{" "}
+                  me.
                 </p>
               </div>
             </div>

@@ -1,7 +1,7 @@
 export const PODCASTS = [
   {
     id: 0,
-    image: "/images/recommendations/podcasts/cal-newport-deep-questions.jpg",
+    image: "/images/recommendations/podcasts/cal-newport-deep-questions.webp",
     title: "Deep Questions with Cal Newport",
     summary: (
       <>
@@ -54,7 +54,7 @@ export const PODCASTS = [
   },
   {
     id: 1,
-    image: "/images/recommendations/podcasts/tech-wont-save-us.png",
+    image: "/images/recommendations/podcasts/tech-wont-save-us.webp",
     title: "Tech Won't Save Us",
     summary: (
       <>
@@ -96,7 +96,7 @@ export const PODCASTS = [
   },
   {
     id: 2,
-    image: "/images/recommendations/podcasts/hard-fork.png",
+    image: "/images/recommendations/podcasts/hard-fork.webp",
     title: "Hard Fork",
     summary: (
       <>

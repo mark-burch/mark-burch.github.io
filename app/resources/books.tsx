@@ -1,7 +1,7 @@
 export const BOOKS = [
   {
     id: 0,
-    image: "/images/recommendations/books/designing-data-applications.jpg",
+    image: "/images/recommendations/books/designing-data-applications.webp",
     title: "Designing Data-Intensive Applications",
     summary: (
       <>
@@ -24,7 +24,7 @@ export const BOOKS = [
   },
   {
     id: 1,
-    image: "/images/recommendations/books/team-topologies.jpg",
+    image: "/images/recommendations/books/team-topologies.webp",
     title: "Team Topologies",
     summary: (
       <>
@@ -47,7 +47,7 @@ export const BOOKS = [
   },
   {
     id: 2,
-    image: "/images/recommendations/books/empire-of-ai.jpg",
+    image: "/images/recommendations/books/empire-of-ai.webp",
     title: "Empire of AI",
     summary: (
       <>

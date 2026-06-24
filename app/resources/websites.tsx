@@ -1,7 +1,7 @@
 export const WEBSITES = [
   {
     id: 0,
-    image: "/images/recommendations/websites/404-media.png",
+    image: "/images/recommendations/websites/404-media.webp",
     title: "404 Media",
     summary: (
       <>
@@ -26,7 +26,7 @@ export const WEBSITES = [
   },
   {
     id: 1,
-    image: "/images/recommendations/websites/the-register.png",
+    image: "/images/recommendations/websites/the-register.webp",
     title: "The Register",
     summary: (
       <>
@@ -52,7 +52,7 @@ export const WEBSITES = [
   },
   {
     id: 2,
-    image: "/images/recommendations/websites/dong-knows-tech.png",
+    image: "/images/recommendations/websites/dong-knows-tech.webp",
     title: "Dong Knows Tech",
     summary: (
       <>

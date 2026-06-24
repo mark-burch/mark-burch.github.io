@@ -45,4 +45,28 @@ export const BOOKS = [
     ),
     footer: <></>,
   },
+  {
+    id: 2,
+    image: "/images/recommendations/books/empire-of-ai.jpg",
+    title: "Empire of AI",
+    summary: (
+      <>
+        Karen Hao's Empire of AI is an exploration of how OpenAI shipped a
+        beautiful mission statement and then quietly rebranded itself a
+        non-profit promising open, humanity-benefiting research before mutating
+        into a closed, hyper-scaling commercial juggernaut. Her thesis is that
+        the race to AGI runs on colonial-style extractive practice: vacuum up
+        the world's data without consent, lean on cheap exploited labour, and
+        burn egregious compute and resources to brute-force capability.
+      </>
+    ),
+    extended: (
+      <>
+        The colonialism analogy was a bit heavy-handed and some events are
+        probably over-dramatised (for example, Altman's exit and reinstatement
+        into OpenAI). Worth a read, still.
+      </>
+    ),
+    footer: <></>,
+  },
 ];

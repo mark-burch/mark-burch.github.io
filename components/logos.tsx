@@ -174,7 +174,7 @@ export function Covalent(props: LogoProps) {
   );
 }
 
-export function Defense(props: LogoProps) {
+export function Defence(props: LogoProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

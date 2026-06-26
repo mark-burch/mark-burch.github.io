@@ -1,5 +1,6 @@
 import Education from "@/components/education";
 import Experience from "@/components/experience";
+import Highlight from "@/components/highlight";
 import Patents from "@/components/patents";
 import { Metadata } from "next";
 
@@ -15,7 +16,9 @@ export default function Resume() {
         <div className="max-w-[700px]">
           <section>
             {/* Page title */}
-            <h1 className="h1 font-aspekta mb-12">Resume</h1>
+            <h1 className="h1 font-aspekta mb-12">
+              <Highlight>Resume</Highlight>
+            </h1>
             {/* Page content */}
             <div className="text-slate-500 dark:text-slate-400 space-y-12">
               <Experience />

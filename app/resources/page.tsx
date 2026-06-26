@@ -3,6 +3,7 @@ import ResourceCard from "../resource-card";
 import { PODCASTS } from "./podcasts";
 import { BOOKS } from "./books";
 import { WEBSITES } from "./websites";
+import Highlight from "@/components/highlight";
 
 export const metadata: Metadata = {
   title: "Resources",
@@ -16,7 +17,9 @@ export default function Resources() {
         <div className="max-w-[700px]">
           <section>
             {/* Page title */}
-            <h1 className="h1 font-aspekta mb-5">Recommended resources</h1>
+            <h1 className="h1 font-aspekta mb-5">
+              Recommended <Highlight>Resources</Highlight>{" "}
+            </h1>
             {/* Page content */}
             <div className="space-y-8">
               <p className="text-slate-500 dark:text-slate-400">

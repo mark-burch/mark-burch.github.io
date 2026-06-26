@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Highlight from "@/components/highlight";
+import { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "About",
 };
 
@@ -14,7 +15,7 @@ export default function About() {
           <section>
             {/* Page title */}
             <h1 className="h1 font-aspekta mb-5">
-              Hi. I'm <Highlight>Mark Burch</Highlight>.
+              I'm <Highlight>Mark Burch</Highlight>.
             </h1>
 
             {/* Page content */}
@@ -219,6 +220,7 @@ export default function About() {
                   <p>
                     Now, in a modern David vs. Goliath story and back in a
                     hands-on role, I am working on displacing an industry giant.
+                    The slingshot is a WIP.
                   </p>
                 </div>
               </div>

@@ -1,3 +1,4 @@
+import Highlight from "@/components/highlight";
 import ProjectCard from "../project-card";
 
 import {
@@ -58,7 +59,7 @@ export default function Projects() {
       href: "https://www.atlassian.com/enterprise/data-center/confluence",
       title: "Confluence Data Center",
       excerpt:
-        "Worked on the main product line, delivering enterprise features such as rate limiting and CDNs. Mostly a Java and Spring codebase with some very legacy code still intact at the time - Apache Struts, XWork et al.",
+        "Worked on the main product line, delivering enterprise features such as rate limiting and CDNs. Mostly a Java and Spring codebase with some very legacy code still intact at the time - Apache Struts, XWork and other load bearing fossils.",
       openSource: false,
       techStack: ["Java", "React", "Apache Struts"],
     },
@@ -81,13 +82,15 @@ export default function Projects() {
         <div className="max-w-[700px]">
           <section>
             {/* Page title */}
-            <h1 className="h1 font-aspekta mb-5">Projects</h1>
+            <h1 className="h1 font-aspekta mb-5">
+              <Highlight>Projects</Highlight>
+            </h1>
             {/* Page content */}
             <div className="space-y-8">
               <p className="text-slate-500 dark:text-slate-400">
                 Like the vast majority of anyone who's ever written code, most
-                of mine is private and proprietary. Here are a few things I can
-                share.
+                of mine is private and proprietary. Here's what the lawyers let
+                me show you.
               </p>
               {/* Side Hustles cards */}
               <section>

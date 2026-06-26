@@ -23,7 +23,7 @@ export default function Hero() {
           <p className="text-lg text-slate-500 dark:text-slate-400">
             These are my own thoughts, experiences and learnings from a 15+ year
             software engineering career. <Highlight>No AI</Highlight> — not even
-            a spellchecker.
+            a spellchecker. All typos are my own.
           </p>
         </div>
       </div>

@@ -96,34 +96,33 @@ export const PODCASTS = [
   },
   {
     id: 2,
-    image: "/images/recommendations/podcasts/hard-fork.webp",
-    title: "Hard Fork",
+    image: "/images/recommendations/podcasts/dreaming-against-the-machine.webp",
+    title: "Dreaming Against the Machine",
     summary: (
       <>
-        NY Times journalists Kevin Roose and Casey Newton host a podcast that's
-        a little bit more upbeat about AI. Verging on too much hype for one to
-        take, it manages to still be thoroughly entertaining and usually hosts
-        some good conversations with industry leaders.
+        Hosted by astrophysicist and science writer Adam Becker, whose book{" "}
+        <em>More Everything Forever</em> took apart Silicon Valley billionaires'
+        visions of the future. A lot of hopeful themes and a good mix of pro and
+        contrarian podcasters and authors. Very easy listen.
       </>
     ),
-    extended: <></>,
+    extended: (
+      <>
+        The conversations come at it through history, science and culture rather
+        than straight tech news, and it's a welcome change from AI commentary
+        that's either doom or hype with nothing in between. It launched in April
+        2026 so not many episodes to get up to speed.
+      </>
+    ),
     footer: (
       <>
-        Favourite episodes:{" "}
+        Favourite episode:{" "}
         <a
           className="font-medium text-sky-500 hover:underline"
-          href="https://www.nytimes.com/2026/04/24/podcasts/hardfork-tim-cook-yang-ubi.html"
+          href="https://podcasts.apple.com/us/podcast/episode-11-reverse-centaurs-and-ai-with-cory-doctorow/id1890733564?i=1000773859398"
           target="_blank"
         >
-          Tim Cook's Legacy
-        </a>
-        ,{" "}
-        <a
-          className="font-medium text-sky-500 hover:underline"
-          href="https://www.nytimes.com/2025/12/12/podcasts/hardfork-australia-water.html"
-          target="_blank"
-        >
-          Australia Kicks Kids Off Social Media
+          Reverse Centaurs and AI, with Cory Doctorow
         </a>
       </>
     ),

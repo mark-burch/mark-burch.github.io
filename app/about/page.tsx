@@ -212,15 +212,17 @@ export default function About() {
                 <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
                   <Image
                     className="rounded-lg w-24 shrink-0 self-center sm:self-start"
-                    src="/images/about/covalent.webp"
+                    src="/images/about/covalent.jpeg"
                     width={180}
                     height={180}
                     alt="Covalent"
                   />
                   <p>
-                    Now, in a modern David vs. Goliath story and back in a
-                    hands-on role, I am working on displacing an industry giant.
-                    The slingshot is a WIP.
+                    Now, enjoying a completely hands-on role, I am working on
+                    Marbles - a full double-entry accounting suite with a modern
+                    AI-assisted take. Think snazzier Xero with a friendlier
+                    interface, durable financial ledgers and a completely
+                    trustworthy MCP API grounded in a real web app.
                   </p>
                 </div>
               </div>
